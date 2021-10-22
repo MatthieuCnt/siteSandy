@@ -292,7 +292,7 @@ img {
 .barre_progression {
 	position: absolute;
 	left: 0;
-	bottom: 40px;
+	bottom: 10px;
 	height: 5px;
 	background: white;
 	animation: barre_progression 25s ease-out infinite;
@@ -393,7 +393,9 @@ img {
 	grid-template-areas:
 		'link1'
 		'link2'
-		'link3';
+		'link3'
+		'link4'
+		'link5';
 	grid-row-gap: 2rem;
 	width: 100%;
 	grid-column-gap: 2rem;
@@ -405,7 +407,9 @@ img {
 	grid-template-rows: 25rem 25rem;
 	grid-template-areas:
 		'link4'
-		'link5';
+		'link5'
+		'link6'
+		'link7';
 	grid-row-gap: 2rem;
 	width: 100%;
 	grid-column-gap: 2rem;
