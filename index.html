@@ -28,32 +28,39 @@
 		<!--En-tête de page-->
 
 		<header class="main-header">
-			<div class="logo" href="index.html">
-				<img src="img/logo.jpg" alt="logo" />
+			<div class="topnav" id="myTopnav">
+				<div class="header-logo">
+					<img src="img/logo.jpg" alt="logo" />
+				</div>
+				<div class="main-navbar">
+					<a href="index.html" class="active"><span class="span">Accueil</span></a>
+					<a href="nav_decouvrir.html"><span class="span">Découvrir</span></a>
+					<a href="nav_contact.html"><span class="span">Contact</span></a>
+				<a
+					href="javascript:void(0);"
+					class="topnav-link icon"
+					onclick="editNav()"
+				>
+					<i class="fa fa-bars"></i>
+				</a>
 			</div>
+		</header>
 			<div class="titlelogo">
 				<h2 class="titlesite">Praticienne en santé naturelle</h2>
 				<p class="textp">
 					Accompagnement et soulagement des troubles émotionnels
 				</p>
 			</div>
-			<nav>
-				<ul class="menu">
-					<li class="menumobil">
-						<a class="menuheader buttonmenu" href="#" data-active="true"
-							>Acceuil</a
-						>
-					</li>
-					<li class="menumobil">
-						<a class="menuheader buttonmenu" href="#" data-active="false"
-							>Découvrir</a
-						>
-					</li>
-					<li><a class="menusignup buttonmenu" href="#">contact</a></li>
+			<div class="slideshow">
+				<ul>
+				<li><img src="img/wakeup.jpg" alt><span>Le Wake Up</span></li>
+				<li><img src="img/dos.jpg" alt><span>Les Troubles du dos</span></li>
+				<li><img src="img/zen.jpg" alt><span>Détente</span></li>
+				<li><img src="img/nursing.jpg" alt><span>Le Nursing Touch</span></li>
+				<li><img src="img/logoband.jpg" alt><span>Le Massage Edonis</span></li>
 				</ul>
-			</nav>
-		</header>
-
+				<div class="barre_progression"></div>
+				</div>
 		<main class="contener">
 			<section class="welcome">
 				<h2 class="title">Bienvenue sur mon site</h2>
@@ -91,6 +98,35 @@
 					soulager.
 				</p>
 			</section>
+			<div class="actu">
+				<h2 class="titleactu">Actualités</h2>
+				<section class="picture">
+					<div class="contenerglobalactu">
+						<a class="picturelink link4">
+							<figure>
+								<img
+									class="activitypicture"
+									src="img/stand.jpg"
+									alt="actu"
+								/>
+								<figcaption class="picturename">
+									Reportage sur ma participation au salon du bien bien-être!
+								</figcaption>
+							</figure>
+						</a>
+						<a class="picturelink link5">
+							<figure>
+								<img
+									class="activitypicture"
+									src="img/cabinet.jpg"
+									alt="actu"
+								/>
+								<figcaption class="picturename">
+									Venez découvrir mon cabinet de Massage !
+								</figcaption>
+							</figure>
+						</a>
+			</div>
 		</main>
 
 		        <!-- Footer -->
@@ -113,4 +149,6 @@
 						</li>
 					</ul>
 				</footer>
+			<script src="index.js"></script>
+	</body>
 		</html>
