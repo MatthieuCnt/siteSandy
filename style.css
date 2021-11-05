@@ -526,4 +526,5 @@ img {
 	margin-right: auto;
 	object-fit: cover;
 	margin-bottom: 4rem;
+	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
 }
