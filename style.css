@@ -104,6 +104,11 @@ body {
 	width: 11rem;
 }
 
+.back {
+	width: 11rem;
+	margin: 3.5% 3.5% 0% 3.5%;
+}
+
 .topnav a {
 	float: left;
 	display: block;
@@ -465,6 +470,12 @@ img {
 	padding-bottom: 0.6rem;
 }
 
+.fa-arrow-left {
+	color: #83a697;
+	font-size: 4rem;
+	padding: 2rem;
+}
+
 /* Footer du site*/
 .footer {
 	padding: 2rem;
@@ -505,4 +516,14 @@ img {
 .insta {
 	padding-right: 0.5rem;
 	color: #fff;
+}
+
+.contact_picture {
+	border-radius: 50%;
+	height: 20rem;
+	width: 20rem;
+	margin-left: auto;
+	margin-right: auto;
+	object-fit: cover;
+	margin-bottom: 4rem;
 }
