@@ -510,7 +510,6 @@ img {
 .tel {
 	padding-right: 0.5rem;
 	padding-left: 0.1rem;
-	color: #fff;
 }
 
 .insta {
@@ -527,4 +526,55 @@ img {
 	object-fit: cover;
 	margin-bottom: 4rem;
 	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
+}
+
+.footer_contact {
+	margin-top: 2.5rem;
+	padding: 2rem;
+	background-color: #83a6978e;
+	box-shadow: 0 0 5px hsl(0deg 0% 0% / 50%);
+}
+
+.footertitle {
+	color: black;
+	padding-bottom: 1rem;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.footerul {
+	list-style-type: none;
+	color: black;
+	text-align: center;
+}
+
+.footerul_contact {
+	display: flex;
+	justify-content: space-between;
+	padding: 3rem 0rem 3rem 6rem;
+}
+
+.tel_contact {
+	font-size: 8rem;
+	color: #000000a8;
+}
+
+.mail_contact {
+	font-size: 8rem;
+	color: #000000a8;
+}
+
+.map_contact {
+	font-size: 8rem;
+	color: #000000a8;
+}
+
+.footertext {
+	color: black;
+}
+
+.footertext_tel {
+	color: black;
+	float: left;
+	margin-top: 0.5rem;
 }
