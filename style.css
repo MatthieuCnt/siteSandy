@@ -133,12 +133,14 @@ body {
 	color: black;
 	border-radius: 15px;
 	font-weight: bold;
+	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
 }
 
 .topnav .icon {
 	display: none;
 	background-color: #83a6978e;
 	border-radius: 15px;
+	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
 }
 
 @media screen and (max-width: 768px) {
@@ -480,6 +482,7 @@ img {
 .footer {
 	padding: 2rem;
 	background-color: #83a697b7;
+	box-shadow: 0 0 5px hsl(0deg 0% 0% / 50%);
 }
 
 .footertitle {
@@ -512,18 +515,12 @@ img {
 	padding-left: 0.1rem;
 }
 
-.insta {
-	padding-right: 0.5rem;
-	color: #fff;
-}
-
 .contact_picture {
 	border-radius: 50%;
-	height: 20rem;
 	width: 20rem;
 	margin-left: auto;
 	margin-right: auto;
-	object-fit: cover;
+	margin-top: 5rem;
 	margin-bottom: 4rem;
 	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
 }
@@ -531,7 +528,7 @@ img {
 .footer_contact {
 	margin-top: 2.5rem;
 	padding: 2rem;
-	background-color: #83a6978e;
+	background-color: rgba(250, 235, 215, 0.384);
 	box-shadow: 0 0 5px hsl(0deg 0% 0% / 50%);
 }
 
@@ -551,12 +548,13 @@ img {
 .footerul_contact {
 	display: flex;
 	justify-content: space-between;
-	padding: 3rem 0rem 3rem 6rem;
+	padding: 3rem 0rem 3rem 4rem;
 }
 
 .tel_contact {
 	font-size: 8rem;
 	color: #000000a8;
+	margin-top: 2rem;
 }
 
 .mail_contact {
@@ -567,6 +565,7 @@ img {
 .map_contact {
 	font-size: 8rem;
 	color: #000000a8;
+	margin-top: 2rem;
 }
 
 .footertext {
@@ -575,6 +574,22 @@ img {
 
 .footertext_tel {
 	color: black;
-	float: left;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
+}
+
+.div_button {
+	margin-left: auto;
+	margin-right: auto;
+	height: 2rem;
+	width: 13rem;
+}
+
+.contact_button {
+	padding: 1.5rem;
+	border: #83a6978e;
+	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
+	border-radius: 2rem;
+	background-color: #83a6978e;
+	font-weight: bold;
+	color: black;
 }
