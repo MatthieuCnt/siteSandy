@@ -224,7 +224,7 @@ img {
 	border: 5px solid white;
 	box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
 	overflow: hidden;
-	max-width: 600px;
+	max-width: 385px;
 	margin: 2rem 0rem auto;
 	position: relative;
 }
@@ -545,6 +545,12 @@ img {
 	text-align: center;
 }
 
+.footerul_2 {
+	list-style-type: none;
+	color: black;
+	text-align: center;
+}
+
 .footerul_contact {
 	display: flex;
 	justify-content: space-between;
@@ -592,4 +598,77 @@ img {
 	background-color: #83a6978e;
 	font-weight: bold;
 	color: black;
+}
+
+@media screen and (min-width: 385px) {
+	.slideshow {
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.footerul_2 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.footer_contact {
+		margin-top: 18rem;
+	}
+
+	.tel_contact {
+		margin-top: 0rem;
+	}
+
+	.map_contact {
+		margin-top: 0rem;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.contenerglobal {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			'link1 link2'
+			'link3 link4'
+			'link5 .';
+		grid-template-rows: none;
+		padding: 2rem;
+		grid-gap: 2rem;
+	}
+
+	.contenerglobalactu {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			'link4 link5'
+			'link6 link7';
+		grid-template-rows: none;
+		grid-gap: 4rem;
+	}
+
+	.picturelink {
+		height: 30rem;
+	}
+
+	.welcome {
+		padding-left: 15%;
+		padding-right: 15%;
+		box-shadow: 0 0 5px hsl(0deg 0% 0% / 50%);
+		margin-top: 2rem;
+		margin-bottom: 0.3rem;
+	}
+
+	.picture {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+	.topnav {
+		margin: 1% 3.5% 0% 3.5%;
+	}
+
+	.titlelogo {
+		padding: 2rem 2rem 0rem 4rem;
+	}
 }
