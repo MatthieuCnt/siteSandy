@@ -206,6 +206,7 @@ body {
 
 .titleactu {
 	padding: 2rem 0rem 0rem 2rem;
+	text-align: center;
 }
 
 section.home-margin {
@@ -460,9 +461,10 @@ img {
 .activitypicture {
 	display: block;
 	object-fit: cover;
-	border-radius: 1.3rem 1.3rem 0rem 0rem;
+	border-radius: 1.3rem;
 	width: 100%;
 	height: 50%;
+	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
 }
 
 .picturename {
@@ -644,7 +646,7 @@ img {
 			'link4 link5'
 			'link6 link7';
 		grid-template-rows: none;
-		grid-gap: 4rem;
+		grid-gap: 6rem;
 	}
 
 	.picturelink {
@@ -660,8 +662,8 @@ img {
 	}
 
 	.picture {
-		padding-left: 15%;
-		padding-right: 15%;
+		padding-left: 30%;
+		padding-right: 30%;
 	}
 
 	.topnav {
@@ -669,6 +671,6 @@ img {
 	}
 
 	.titlelogo {
-		padding: 2rem 2rem 0rem 4rem;
+		padding: 2rem 2rem 2rem 4rem;
 	}
 }
