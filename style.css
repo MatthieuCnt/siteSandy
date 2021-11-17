@@ -467,6 +467,15 @@ img {
 	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
 }
 
+.activitypicturebig {
+	display: block;
+	object-fit: cover;
+	border-radius: 1.3rem;
+	width: 100%;
+	height: 50%;
+	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
+}
+
 .picturename {
 	text-align: center;
 	padding-top: 0.6rem;
@@ -639,6 +648,10 @@ img {
 		grid-gap: 2rem;
 	}
 
+	body {
+		font-size: 15px;
+	}
+
 	.contenerglobalactu {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -654,16 +667,14 @@ img {
 	}
 
 	.welcome {
-		padding-left: 15%;
-		padding-right: 15%;
-		box-shadow: 0 0 5px hsl(0deg 0% 0% / 50%);
-		margin-top: 2rem;
+		padding-left: 20%;
+		padding-right: 20%;
 		margin-bottom: 0.3rem;
 	}
 
 	.picture {
-		padding-left: 30%;
-		padding-right: 30%;
+		padding-left: 20%;
+		padding-right: 20%;
 	}
 
 	.topnav {
@@ -672,5 +683,19 @@ img {
 
 	.titlelogo {
 		padding: 2rem 2rem 2rem 4rem;
+	}
+
+	.activitypicture {
+		margin: auto;
+		max-width: 62rem;
+	}
+
+	.activitypicturebig {
+		margin: auto;
+		max-width: 50rem;
+	}
+
+	.back {
+		margin-top: 1.5%;
 	}
 }
