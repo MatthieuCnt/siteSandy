@@ -230,6 +230,15 @@ img {
 	position: relative;
 }
 
+.slideshow1 {
+	border: 5px solid white;
+	box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
+	overflow: hidden;
+	max-width: 385px;
+	margin: 2rem 0rem auto;
+	position: relative;
+}
+
 .slideshow ul {
 	padding-bottom: 66.67%; /* ratio pour le responsive */
 	margin: 0;
@@ -296,6 +305,71 @@ img {
 	left: 0;
 }
 
+.slideshow1 ul {
+	padding-bottom: 12rem; /* ratio pour le responsive */
+	margin: 0;
+	list-style-type: none;
+	position: relative;
+}
+
+.slideshow1 li {
+	top: 0;
+	left: 0;
+	animation: slideshow 25s ease infinite;
+	position: absolute;
+	opacity: 0;
+}
+
+.slideshow1 li:nth-child(2) {
+	animation-delay: 5s;
+}
+
+.slideshow1 li:nth-child(3) {
+	animation-delay: 10s;
+}
+
+.slideshow1 li:nth-child(4) {
+	animation-delay: 15s;
+}
+
+.slideshow1 li:nth-child(5) {
+	animation-delay: 20s;
+}
+
+@keyframes slideshow1 {
+	0% {
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 1;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.slideshow1 span {
+	background: rgba(0, 0, 0, 0.7);
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
 /*****barre progression *****/
 .barre_progression {
 	position: absolute;
@@ -384,6 +458,7 @@ img {
 
 .title {
 	padding: 1rem 0rem;
+	text-align: center;
 }
 
 .picture {
@@ -461,10 +536,22 @@ img {
 .activitypicture {
 	display: block;
 	object-fit: cover;
+	border-radius: 1.3rem 1.3rem 0rem 0rem;
+	width: 100%;
+	height: 50%;
+	max-height: 30rem;
+	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
+}
+
+.activitypicturedetail {
+	display: block;
+	object-fit: cover;
 	border-radius: 1.3rem;
 	width: 100%;
 	height: 50%;
 	box-shadow: 0rem 0.3rem 0.6rem #9c9c9c;
+	margin: auto;
+	max-height: 22rem;
 }
 
 .activitypicturebig {
@@ -537,7 +624,6 @@ img {
 }
 
 .footer_contact {
-	margin-top: 2.5rem;
 	padding: 2rem;
 	background-color: rgba(250, 235, 215, 0.384);
 	box-shadow: 0 0 5px hsl(0deg 0% 0% / 50%);
@@ -615,15 +701,18 @@ img {
 	.slideshow {
 		margin: auto;
 	}
+
+	.slideshow1 {
+		margin: auto;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
 }
 
 @media screen and (min-width: 700px) {
 	.footerul_2 {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-	}
-	.footer_contact {
-		margin-top: 18rem;
 	}
 
 	.tel_contact {
@@ -632,6 +721,12 @@ img {
 
 	.map_contact {
 		margin-top: 0rem;
+	}
+}
+
+@media screen and (min-width: 384px) {
+	.slideshow {
+		margin-top: 2rem;
 	}
 }
 
@@ -687,7 +782,6 @@ img {
 
 	.activitypicture {
 		margin: auto;
-		max-width: 62rem;
 	}
 
 	.activitypicturebig {
@@ -695,7 +789,37 @@ img {
 		max-width: 50rem;
 	}
 
+	.activitypicturedetail {
+		max-width: 50rem;
+	}
+
 	.back {
 		margin-top: 1.5%;
+	}
+
+	.div_button {
+		width: 18rem;
+	}
+
+	.slideshow {
+		max-width: 500px;
+	}
+
+	.slideshow1 {
+		margin-top: 4rem;
+		max-width: 620px;
+	}
+
+	.slideshow1 ul {
+		padding-bottom: 15rem;
+	}
+
+	.contact_picture {
+		margin-top: 0rem;
+		margin-bottom: 2rem;
+	}
+
+	img {
+		width: 500px;
 	}
 }
