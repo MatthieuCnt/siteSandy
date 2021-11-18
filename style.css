@@ -727,6 +727,7 @@ img {
 @media screen and (min-width: 384px) {
 	.slideshow {
 		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -765,6 +766,7 @@ img {
 		padding-left: 20%;
 		padding-right: 20%;
 		margin-bottom: 0.3rem;
+		box-shadow: 0 0 5px hsl(0deg 0% 0% / 50%);
 	}
 
 	.picture {
